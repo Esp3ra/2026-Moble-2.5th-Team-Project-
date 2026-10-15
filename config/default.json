@@ -1,0 +1,70 @@
+{
+  "serial": {
+    "port": "auto",
+    "baud": 115200,
+    "stale_seconds": 5.0,
+    "ack_seconds": 3.0,
+    "retry_seconds": 2.0
+  },
+  "camera": {
+    "device": 0,
+    "width": 640,
+    "height": 480,
+    "fps": 30,
+    "capture_fps": 60,
+    "fourcc": "MJPG",
+    "stale_seconds": 3.0,
+    "retry_seconds": 2.0,
+    "startup_seconds": 30.0
+  },
+  "vision": {
+    "roi": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+    ],
+    "backend": "tensorrt",
+    "confidence": 0.6,
+    "input_size": 320,
+    "engine": "models/person_fp16.engine",
+    "faces": {
+      "enabled": false,
+      "detector_engine": "models/face_detection_yunet_fp16.engine",
+      "recognizer_engine": "models/face_recognition_sface_fp16.engine",
+      "database": "data/identities.json",
+      "threshold": 0.5,
+      "min_face_pixels": 60,
+      "confirm_frames": 3
+    }
+  },
+  "access": {
+    "method": "manual",
+    "grant_seconds": 30.0,
+    "clear_frames": 5,
+    "pin_hash": ""
+  },
+  "thresholds": {
+    "temp_warning": 32.0,
+    "temp_danger": 38.0,
+    "temp_hysteresis": 2.0,
+    "gas_warning": 400,
+    "gas_danger": 600,
+    "gas_hysteresis": 40
+  },
+  "hardware": {
+    "profile": "production",
+    "confirmed": false,
+    "gas_calibrated": false,
+    "require_ir": false
+  },
+  "control": {
+    "recovery_seconds": 2.0,
+    "command_seconds": 0.5,
+    "manual_seconds": 15.0
+  },
+  "logging": {
+    "directory": "logs",
+    "csv_seconds": 1.0
+  }
+}

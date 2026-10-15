@@ -1,0 +1,3 @@
+# OpenCV / NumPy / Tkinter use the Jetson system packages.
+# Do not replace NVIDIA's OpenCV or upgrade the OS for this project.
+pyserial==3.5

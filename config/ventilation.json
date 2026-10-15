@@ -1,0 +1,27 @@
+{
+  "hardware": {
+    "profile": "ventilation",
+    "confirmed": true,
+    "gas_calibrated": false,
+    "require_ir": false
+  },
+  "thresholds": {
+    "temp_warning": 27.0,
+    "temp_danger": 28.0,
+    "temp_hysteresis": 0.0,
+    "gas_warning": 250,
+    "gas_danger": 600,
+    "gas_hysteresis": 40
+  },
+  "access": {
+    "method": "face"
+  },
+  "camera": {
+    "device": "/dev/v4l/by-id/usb-Global_Shutter_Camera_Global_Shutter_Camera_01.00.00-video-index0"
+  },
+  "vision": {
+    "faces": {
+      "enabled": true
+    }
+  }
+}

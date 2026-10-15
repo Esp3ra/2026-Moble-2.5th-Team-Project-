@@ -1,0 +1,45 @@
+# Dependencies, generated builds and machine-specific files
+.vendor/
+.tools/
+.backups/
+.venv/
+venv/
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+logs/
+build/
+config/local.json
+data/
+dist/
+.live.lock
+.simulation.lock
+*.pid
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+
+# Models are restored from the pinned manifests with scripts/download_model.py
+# and scripts/build_face_engines.py. TensorRT engines are built on the target.
+models/*.onnx
+models/*.engine
+models/*.download
+models/*.tmp
+
+# Raw camera frames, operator records and local diagnostic backups stay local.
+# Publish only reviewed validation evidence from the current software revision.
+artifacts/*
+!artifacts/temperature-stop-tests.log
+!artifacts/temperature-stop-build.log
+!artifacts/temperature-stop-upload.log
+!artifacts/temperature-stop-gui-check.log
+!artifacts/temperature-stop-dashboard.png
+!artifacts/temperature-stop-serial-result.json
+!artifacts/temperature-stop-live.json
+
+# Withdrawn annotation prompt is retained locally as history, not wiring advice.
+docs/breadboard-photo-review-prompt.txt

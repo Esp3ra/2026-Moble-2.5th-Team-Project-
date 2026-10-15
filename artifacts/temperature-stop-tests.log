@@ -1,0 +1,134 @@
+test_alarm_mute_keeps_access_lock_and_new_cause_rearms (test_admin_revision.AdminControlTests) ... ok
+test_enrollment_requires_pin_collects_quality_samples_and_persists (test_admin_revision.AdminControlTests) ... ok
+test_local_environment_boost_respects_manual_override_and_ack_flags (test_admin_revision.AdminControlTests) ... ok
+test_manual_open_close_persist_and_auto_restores_outputs (test_admin_revision.AdminControlTests) ... ok
+test_snapshot_never_contains_face_template (test_admin_revision.AdminControlTests) ... ok
+test_fresh_consecutive_frames_and_immediate_unknown_revocation (test_admin_revision.FaceAccessTests) ... ok
+test_person_swap_duplicates_and_additional_unknown_cannot_inherit_approval (test_admin_revision.FaceAccessTests) ... ok
+test_alignment_rejects_degenerate_points_and_preserves_reference (test_admin_revision.IdentityTests) ... ok
+test_corrupt_file_is_not_silently_reset (test_admin_revision.IdentityTests) ... ok
+test_enrollment_survives_restart_and_deletion (test_admin_revision.IdentityTests) ... ok
+test_failed_save_preserves_previous_file (test_admin_revision.IdentityTests) ... ok
+test_inconsistent_duplicate_and_ambiguous_templates_rejected (test_admin_revision.IdentityTests) ... ok
+test_only_nearest_person_is_recognized_but_enrollment_still_requires_one (test_admin_revision.IdentityTests) ... ok
+test_cold_first_result_does_not_end_startup_grace (test_camera.CameraRecoveryTests) ... WARNING:app.devices:Camera unavailable; retrying: inference timeout (3.2s)
+ok
+test_hung_process_restart (test_camera.CameraRecoveryTests) ... WARNING:app.devices:Camera unavailable; retrying: inference timeout (0.3s)
+ok
+test_only_stale_first_results_still_exhaust_startup_grace (test_camera.CameraRecoveryTests) ... WARNING:app.devices:Camera unavailable; retrying: inference timeout (31.0s)
+ok
+test_preview_cannot_keep_stalled_inference_healthy (test_camera.CameraRecoveryTests) ... WARNING:app.devices:Camera unavailable; retrying: inference timeout (0.3s)
+ok
+test_slow_inference_does_not_block_capture (test_camera.CameraRecoveryTests) ... ok
+test_approval_expiration_alarms (test_core.AccessTests) ... ok
+test_camera_fault_revokes_and_prevents_restart (test_core.AccessTests) ... ok
+test_clear_requires_distinct_frames (test_core.AccessTests) ... ok
+test_latched_intrusion_cannot_clear_itself (test_core.AccessTests) ... ok
+test_pin_hash (test_core.AccessTests) ... ok
+test_second_person_revokes_approval (test_core.AccessTests) ... ok
+test_start_requires_safe_state (test_core.AccessTests) ... ok
+test_full_simulated_intrusion_and_recovery (test_core.ConfigAndInferenceTests) ... ok
+test_invalid_roi_and_thresholds (test_core.ConfigAndInferenceTests) ... ok
+test_yolo_nms_and_person_class_filter (test_core.ConfigAndInferenceTests) ... ok
+test_interlock_command_defaults_off (test_core.ProtocolTests) ... ok
+test_invalid_values_rejected (test_core.ProtocolTests) ... ok
+test_missing_values_rejected (test_core.ProtocolTests) ... ok
+test_split_packets_and_resync (test_core.ProtocolTests) ... ok
+test_camera_failure_blocks (test_core.SafetyTests) ... ok
+test_environment_danger_ventilates_during_comm_fault (test_core.SafetyTests) ... ok
+test_gas_hysteresis_and_recovery (test_core.SafetyTests) ... ok
+test_intrusion_immediately_alarms (test_core.SafetyTests) ... ok
+test_live_unconfigured_hardware_blocked (test_core.SafetyTests) ... ok
+test_manual_cannot_close_danger_vent (test_core.SafetyTests) ... ok
+test_nan_sensor_is_fault (test_core.SafetyTests) ... ok
+test_stale_samples_never_normal (test_core.SafetyTests) ... ok
+test_startup_recovery_delay (test_core.SafetyTests) ... ok
+test_interlock_rgb_and_polarity (test_firmware_outputs.FirmwareOutputTests) ... ok
+test_ack_accepts_safe_override_but_never_extra_run (test_integration.IntegrationTests) ... ok
+test_actual_mcu_limiter_cannot_be_extended_and_handles_wrap (test_integration.IntegrationTests) ... ok
+test_bench_does_not_claim_gas_calibrated (test_integration.IntegrationTests) ... ok
+test_bench_still_blocks_heat_intrusion_and_sensor_fault (test_integration.IntegrationTests) ... ok
+test_initial_pin_persistence_preserves_settings_and_permissions (test_integration.IntegrationTests) ... ok
+test_mcu_fault_propagates (test_integration.IntegrationTests) ... ok
+test_old_ack_is_not_healthy_when_command_producer_stalls (test_integration.IntegrationTests) ... ok
+test_production_calibration_is_still_required (test_integration.IntegrationTests) ... ok
+test_profile_and_independent_limit_must_match (test_integration.IntegrationTests) ... ok
+test_runtime_expiry_and_mcu_override_drop_start_latch (test_integration.IntegrationTests) ... ok
+test_empty_and_malformed_geometry_have_no_target (test_nearest_person.NearestPersonTests) ... ok
+test_equal_scale_keeps_a_person_without_a_visible_face_in_contention (test_nearest_person.NearestPersonTests) ... ok
+test_head_only_detection_and_roi (test_nearest_person.NearestPersonTests) ... ok
+test_invalid_target_or_multiple_identity_results_cannot_authorize (test_nearest_person.NearestPersonTests) ... ok
+test_larger_turned_away_person_is_not_ignored (test_nearest_person.NearestPersonTests) ... ok
+test_no_face_or_poor_face_does_not_fall_back_to_background (test_nearest_person.NearestPersonTests) ... ok
+test_permission_tracks_the_selected_identity_not_total_count (test_nearest_person.NearestPersonTests) ... ok
+test_registered_front_unknown_behind_uses_one_recognition (test_nearest_person.NearestPersonTests) ... ok
+test_runtime_alarm_lock_and_environment_with_two_people (test_nearest_person.NearestPersonTests) ... ok
+test_small_background_body_does_not_revoke_front_person (test_nearest_person.NearestPersonTests) ... ok
+test_unknown_front_does_not_search_background_for_registered_person (test_nearest_person.NearestPersonTests) ... ok
+test_frequency_pulse_width_stop_and_timer_isolation (test_quiet_buzzer.QuietBuzzerTests) ... ok
+test_real_serial_timeout_and_reconnect (test_serial.SerialRecoveryTests) ... WARNING:app.devices:Serial retry: Telemetry timeout (0.4s)
+WARNING:app.devices:Serial retry: Command ACK timeout
+ok
+test_apply_without_sudo_does_not_read_or_write_boot (test_ssd_boot.SSDBootTests) ... ok
+test_both_missing_do_not_start_unmounted_root (test_ssd_boot.SSDBootTests) ... ok
+test_duplicate_entry_is_refused (test_ssd_boot.SSDBootTests) ... ok
+test_invalid_sd_uuid_is_refused (test_ssd_boot.SSDBootTests) ... ok
+test_missing_ssd_falls_back_to_sd (test_ssd_boot.SSDBootTests) ... ok
+test_preserves_sd_boot_and_adds_ssd_entry (test_ssd_boot.SSDBootTests) ... ok
+test_ssd_mount_success_uses_ssd (test_ssd_boot.SSDBootTests) ... ok
+test_unexpected_initrd_is_refused (test_ssd_boot.SSDBootTests) ... ok
+test_unrecognized_initrd_script_is_refused (test_ssd_boot.SSDBootTests) ... ok
+test_usb_delay_retries_ssd_mount (test_ssd_boot.SSDBootTests) ... ok
+test_already_ssd_source_refused (test_ssd_migration.SSDMigrationTests) ... ok
+test_ambiguous_default_refused (test_ssd_migration.SSDMigrationTests) ... ok
+test_default_entry_changes_and_backup_is_preserved (test_ssd_migration.SSDMigrationTests) ... ok
+test_erasure_ack_required_before_any_mutation (test_ssd_migration.SSDMigrationTests) ... ok
+test_invalid_partuuid_refused (test_ssd_migration.SSDMigrationTests) ... ok
+test_missing_explicit_root_refused (test_ssd_migration.SSDMigrationTests) ... ok
+test_multiple_explicit_roots_refused (test_ssd_migration.SSDMigrationTests) ... ok
+test_old_swap_disabled_and_other_mount_preserved (test_ssd_migration.SSDMigrationTests) ... ok
+test_other_disk_size_refused (test_ssd_migration.SSDMigrationTests) ... ok
+test_other_sector_size_refused (test_ssd_migration.SSDMigrationTests) ... ok
+test_real_gpt_layout_on_sparse_regular_file (test_ssd_migration.SSDMigrationTests) ... ok
+test_recovers_from_gpt_swap_collision_that_stopped_old_script (test_ssd_migration.SSDMigrationTests) ... ok
+test_recovers_when_both_gpt_headers_are_damaged (test_ssd_migration.SSDMigrationTests) ... ok
+test_root_required_before_any_mutation (test_ssd_migration.SSDMigrationTests) ... ok
+test_unknown_default_refused (test_ssd_migration.SSDMigrationTests) ... ok
+test_wrong_opened_file_size_cannot_be_erased (test_ssd_migration.SSDMigrationTests) ... ok
+test_apply_needs_root_before_any_setup (test_ssd_standalone.StandaloneBootTests) ... ok
+test_duplicate_setup_refused (test_ssd_standalone.StandaloneBootTests) ... ok
+test_existing_dtb_directive_is_replaced_once (test_ssd_standalone.StandaloneBootTests) ... ok
+test_failed_mount_stops_without_attempting_sd_or_booting_empty_root (test_ssd_standalone.StandaloneBootTests) ... ok
+test_missing_initrd_refused (test_ssd_standalone.StandaloneBootTests) ... ok
+test_sd_present_is_not_reported_as_standalone_success (test_ssd_standalone.StandaloneBootTests) ... ok
+test_ssd_entry_names_every_boot_file_and_preserves_original (test_ssd_standalone.StandaloneBootTests) ... ok
+test_success_mounts_only_requested_ssd (test_ssd_standalone.StandaloneBootTests) ... ok
+test_unknown_kernel_refused (test_ssd_standalone.StandaloneBootTests) ... ok
+test_unrecognized_init_script_refused (test_ssd_standalone.StandaloneBootTests) ... ok
+test_usb_delay_beyond_original_limit_is_supported (test_ssd_standalone.StandaloneBootTests) ... ok
+test_approved_person_leaving_does_not_trip_camera_fault (test_ventilation.VentilationTests) ... ok
+test_automatic_stop_restarts_without_pin_but_preserves_manual_stop (test_ventilation.VentilationTests) ... ok
+test_continuous_fan_and_approval_expiry (test_ventilation.VentilationTests) ... ok
+test_cooling_below_27_does_not_clear_gas_alarm_or_access_lock (test_ventilation.VentilationTests) ... ok
+test_correct_pin_cannot_bypass_combined_alarm_setting_lock (test_ventilation.VentilationTests) ... ok
+test_environment_immediately_overrides_intrusion_and_recovers_to_red (test_ventilation.VentilationTests) ... ok
+test_fault_during_automatic_stop_still_requires_operator_resume (test_ventilation.VentilationTests) ... ok
+test_fault_latches_stop_and_requires_explicit_resume (test_ventilation.VentilationTests) ... ok
+test_local_temperature_stop_ack_is_separate_from_a_fault_stop (test_ventilation.VentilationTests) ... ok
+test_mcu_latch_cannot_be_cleared_by_cool_host_sample (test_ventilation.VentilationTests) ... ok
+test_mcu_local_boost_ack_and_combined_flags (test_ventilation.VentilationTests) ... ok
+test_native_firmware_priority_stop_fault_and_led_timing (test_ventilation.VentilationTests) ... ok
+test_priority_matrix_at_inclusive_thresholds (test_ventilation.VentilationTests) ... ok
+test_raw_gas_release_boundary_and_delay (test_ventilation.VentilationTests) ... ok
+test_stale_camera_and_expired_grant_cannot_use_old_unlocked_snapshot (test_ventilation.VentilationTests) ... ok
+test_stop_wins_over_combined_alarm_and_locked_resume_is_denied (test_ventilation.VentilationTests) ... ok
+test_supervisor_crash_recovery_does_not_restart_fan (test_ventilation.VentilationTests) ... ok
+test_temperature_danger_does_not_override_fault_or_emergency_stop (test_ventilation.VentilationTests) ... ok
+test_temperature_recovery_window_restarts_on_heat_invalid_or_stale_data (test_ventilation.VentilationTests) ... ok
+test_temperature_stop_waits_below_27_for_five_seconds (test_ventilation.VentilationTests) ... ok
+test_threshold_or_profile_mismatch_stops_fan (test_ventilation.VentilationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 123 tests in 26.903s
+
+OK

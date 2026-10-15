@@ -1,0 +1,13 @@
+{
+  "release": "v6.0",
+  "files": {
+    "yolov5n.onnx": {
+      "url": "https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5n.onnx",
+      "sha256": "6c686f5c56c5da87c6445a2f7bd2dc2d6b664325368d9de1fd7c05100b9e442e"
+    },
+    "YOLO_LICENSE": {
+      "url": "https://raw.githubusercontent.com/ultralytics/yolov5/v6.0/LICENSE",
+      "sha256": "c3bc1fd94148c28485e8bab1d5a28edbc8e3870f2bd9be7127c68c8b7a0ea5df"
+    }
+  }
+}

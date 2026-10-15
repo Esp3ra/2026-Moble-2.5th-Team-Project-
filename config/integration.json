@@ -1,0 +1,8 @@
+{
+  "hardware": {
+    "profile": "bench",
+    "confirmed": true,
+    "gas_calibrated": false,
+    "require_ir": false
+  }
+}

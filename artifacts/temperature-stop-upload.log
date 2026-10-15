@@ -1,0 +1,3 @@
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: stk500v2_ReceiveMessage(): timeout
+New upload port: /dev/ttyUSB0 (serial)

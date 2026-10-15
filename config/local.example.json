@@ -1,0 +1,7 @@
+{
+  "serial": {"port": "/dev/ttyACM0"},
+  "camera": {"device": 0},
+  "vision": {"roi": [0.0, 0.0, 1.0, 1.0], "confidence": 0.6},
+  "hardware": {"confirmed": false, "gas_calibrated": false, "require_ir": false},
+  "thresholds": {"temp_warning": 32.0, "temp_danger": 38.0, "temp_hysteresis": 2.0, "gas_warning": 400, "gas_danger": 600, "gas_hysteresis": 40}
+}
